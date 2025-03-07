@@ -166,11 +166,11 @@ document.addEventListener("click", function (event) {
 
 document.addEventListener("keydown", function (event) {
     if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "o") {
-        event.preventDefault(); // デフォルトの開く動作を防ぐ
+        event.preventDefault();
 
         let openButton = document.querySelector("#notePreviewControls button:first-child");
         if (openButton) {
-            openButton.click(); // openButton をクリック
+            openButton.click();
         }
     }
 });
